@@ -41,7 +41,14 @@ import login
 # f3 = delattr(obj, 'exit')
 # print('delattr后的结果为：', f3)
 
-f = delattr(login, 'str1')
-print(f)
-f2 = hasattr(login, 'str1')
-print(f2)
+# 在login模块中删除str1
+# f = delattr(login, 'str1')
+# print(f)
+# f2 = hasattr(login, 'str1')
+# print(f2)
+
+# 在login模块中设置变量str2
+# f= setattr(login, 'str2', 'hello world')
+# f1 = hasattr(login, 'str2')
+# print(f1)
+
