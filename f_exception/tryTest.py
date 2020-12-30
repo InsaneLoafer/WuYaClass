@@ -8,8 +8,9 @@ def div(a, b):
 
 
 """
-try代码执行正常，就不会执行except的代码
-只有try代码执行异常，才会执行except的代码
+try-->except执行步骤：
+1、try代码执行正常，就不会执行except的代码
+2、只有try代码执行异常，才会执行except的代码
 """
 # try:
 #     div(1, 0)
@@ -35,7 +36,7 @@ except Exception as e:
 
 """分母为字符串的情况"""
 try:
-    div(1, '2')
+    div(1, {'name': 'wuya'})
 except Exception as e:
     print(e.args)
 
