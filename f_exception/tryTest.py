@@ -45,3 +45,18 @@ try:
     div(1, 1.01)
 except Exception as e:
     print(e.args)
+
+"""
+try--except--else--finally
+1.先执行try，如果执行通过，就执行else代码，最后执行finally
+2.如果try执行失败，就直接执行finally
+"""
+
+try:
+    div(1,0)
+except Exception as e:
+    raise Exception('我是执行失败了')
+else:
+    print('pass')
+finally:
+    print('finally')
